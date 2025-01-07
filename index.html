@@ -7,47 +7,65 @@
     <nav id="navbar">
       <header>HTML - The Basics</header>
       <ul>
-        <a class="nav-link" href="#introduction" rel="internal"><li>Introduction</li></a>
-        <a class="nav-link" href="#Something2" rel="internal"><li>Something2</li></a>
-        <a class="nav-link" href="#Something3" rel="internal"><li>Something3</li></a>
-        <a class="nav-link" href="#Something4" rel="internal"><li>Something4</li></a>
-        <a class="nav-link" href="#Something5" rel="internal"><li>Something5</li></a>
+        <li><a class="nav-link" href="#introduction" rel="internal" title="Introduction Section">Introduction</a></li>
+        <li><a class="nav-link" href="#something2" rel="internal" title="Something2 Section">Something2</a></li>
+        <li><a class="nav-link" href="#something3" rel="internal" title="Something3 Section">Something3</a></li>
+        <li><a class="nav-link" href="#something4" rel="internal" title="Something4 Section">Something4</a></li>
+        <li><a class="nav-link" href="#something5" rel="internal" title="Something5 Section">Something5</a></li>
       </ul>
     </nav>
     <main id="main-doc">
       <section class="main-section" id="introduction">
         <header>Introduction</header>
         <p>A brief history of HTML:</p>
-        <li>The World Wide Web has only been in existence for about 30 years. A relatively short time span for what we have today.</li>
-        <li>The current version we use today is the 5th version of HTML otherwise called HTML5, which is what will be shown briefly in this page.
-        <li>If you are curious on learning more about the history of the world wide web, you can read it at this <a class="ext-link" href="https://www.webdesignmuseum.org/web-design-history">link</a>.
-        <p>HTML is the basic language used to code most websites consumers use on a daily basis. It's the language that's used to deliver the basic interface that shows on a page. HTML has a low barrier of entry and doesn't require any extensive prior knowledge to learn some of the most basics of code to create a simple page.</p>
+        <ul>
+          <li>The World Wide Web has only been in existence for about 30 years.</li>
+          <li>The current version we use today is HTML5, which will be briefly covered here.</li>
+          <li>If you are curious about the history of the web, visit this <a class="ext-link" href="https://www.webdesignmuseum.org/web-design-history" target="_blank">link</a>.</li>
+        </ul>
+        <p>HTML is the basic language used to code most websites. It has a low barrier to entry and doesn't require prior coding knowledge.</p>
       </section>
-      <section class="main-section" id="Something2">
+      <section class="main-section" id="something2">
         <header>Something2</header>
-        <p>text here</p>
-        <li>text here</li>
-        <li>text here</li>
-        <p>text here</p>
-        <code>html</code>
-        <code>html</code>
+        <p>This section covers additional details:</p>
+        <ul>
+          <li>HTML syntax is easy to learn.</li>
+          <li>HTML can be combined with CSS and JavaScript.</li>
+        </ul>
+        <p>Here’s an example:</p>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html&gt;&lt;/html&gt;</code>
       </section>
-      <section class="main-section" id="Something3">
+      <section class="main-section" id="something3">
         <header>Something3</header>
-        <p>text here</p>
-        <p>text here</p>
-        <code>html</code>
-        <code>html</code>
+        <p>Advanced topics in HTML include:</p>
+        <ul>
+          <li>Semantic elements like &lt;header&gt; and &lt;footer&gt;.</li>
+          <li>Embedding multimedia elements like &lt;video&gt; and &lt;audio&gt;.</li>
+        </ul>
+        <code>&lt;header&gt;&lt;/header&gt;</code>
+        <code>&lt;footer&gt;&lt;/footer&gt;</code>
       </section>
-      <section class="main-section" id="Something4">
+      <section class="main-section" id="something4">
         <header>Something4</header>
-        <p>text here</p>
-        <p>text here</p>
+        <p>Understanding forms in HTML:</p>
+        <ul>
+          <li>Forms allow user input via fields like text boxes and buttons.</li>
+          <li>Forms require proper validation for better user experience.</li>
+        </ul>
+        <p>Example:</p>
+        <code>&lt;form action="#" method="post"&gt;</code>
       </section>
-      <section class="main-section" id="Something5">
+      <section class="main-section" id="something5">
         <header>Something5</header>
-        <p>text here</p>
-        <p>text here</p>
-        <code>html</code>
+        <p>HTML supports inline and block-level elements.</p>
+        <p>Examples include:</p>
+        <ul>
+          <li>Inline: &lt;span&gt;, &lt;a&gt;.</li>
+          <li>Block-level: &lt;div&gt;, &lt;p&gt;.</li>
+        </ul>
+        <code>&lt;div&gt;&lt;/div&gt;</code>
       </section>
     </main>
+  </body>
+</html>

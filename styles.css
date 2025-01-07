@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,22 +16,52 @@ body {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+#navbar header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navbar li {
+  margin-bottom: 1em;
+}
+
+#navbar a.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#navbar a.nav-link:hover {
+  color: #007bff;
+}
+
 #main-doc {
-  margin-left: 220px; 
+  margin-left: 220px; /* Space for the fixed navbar */
   padding: 20px;
 }
 
+/* Responsive Styles */
 @media (max-width: 480px) {
   #navbar {
-    width: 150px; 
+    width: 150px;
   }
 
   #main-doc {
-    margin-left: 170px; 
+    margin-left: 170px;
     padding: 10px;
   }
 
-  .text {
-    font-size: 16px;
+  #navbar header {
+    font-size: 1em;
+  }
+
+  #navbar a.nav-link {
+    font-size: 0.9em;
   }
 }
