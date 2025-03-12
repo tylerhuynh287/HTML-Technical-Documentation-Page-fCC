@@ -15,6 +15,6 @@ A responsive and functional technical documentation page dedicated to explaining
 ## How to View
 1. Clone this repository:
    ```bash
-   git clone git@github.com:yourusername/html-technical-doc.git
+   git clone git@github.com:tylerhuynh287/HTML-Technical-Documentation-Page-fCC.git
 
 Pushed to meet base requirements, will be updated.
