@@ -1,5 +1,5 @@
 # HTML Technical Documentation Page  
-A responsive and functional technical documentation page dedicated to explaining the basics of HTML. Built as part of a freeCodeCamp project.
+A responsive and functional technical documentation page dedicated to explaining the basics of HTML. Built as part of the freeCodeCamp Responsive Web Design Certification, Project 3.
 
 ## Features
 - **Comprehensive Documentation**: Includes an overview of HTML's history, its purpose, and its foundational elements.
