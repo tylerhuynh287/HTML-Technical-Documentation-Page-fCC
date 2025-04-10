@@ -67,6 +67,6 @@ project-root/
 ## Clone this repository:
 
 ```bash
-   git clone https://github.com/tylerhuynh287/HTML-Technical-Documentation-Page-fCC.git
-   cd HTML-Technical-Documentation-Page-fCC
-   open index.html
+ - git clone https://github.com/tylerhuynh287/HTML-Technical-Documentation-Page-fCC.git
+ - cd HTML-Technical-Documentation-Page-fCC
+ - open index.html
