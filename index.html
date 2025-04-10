@@ -1,74 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Basics - Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav id="navbar">
       <header>HTML - The Basics</header>
       <ul>
-        <li><a class="nav-link" href="#introduction" rel="internal" title="Introduction Section">Introduction</a></li>
-        <li><a class="nav-link" href="#something2" rel="internal" title="Something2 Section">Something2</a></li>
-        <li><a class="nav-link" href="#something3" rel="internal" title="Something3 Section">Something3</a></li>
-        <li><a class="nav-link" href="#something4" rel="internal" title="Something4 Section">Something4</a></li>
-        <li><a class="nav-link" href="#something5" rel="internal" title="Something5 Section">Something5</a></li>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#syntax">Syntax</a></li>
+        <li><a class="nav-link" href="#advanced-elements">Advanced Elements</a></li>
+        <li><a class="nav-link" href="#forms">Forms</a></li>
+        <li><a class="nav-link" href="#inline-vs-block">Inline vs Block</a></li>
+        <li><a class="nav-link" href="#media">Media & Embeds</a></li>
+        <li><a class="nav-link" href="#best-practices">Best Practices & SEO</a></li>
       </ul>
     </nav>
+
     <main id="main-doc">
       <section class="main-section" id="introduction">
         <header>Introduction</header>
-        <p>A brief history of HTML:</p>
-        <ul>
-          <li>The World Wide Web has only been in existence for about 30 years.</li>
-          <li>The current version we use today is HTML5, which will be briefly covered here.</li>
-          <li>If you are curious about the history of the web, visit this <a class="ext-link" href="https://www.webdesignmuseum.org/web-design-history" target="_blank">link</a>.</li>
-        </ul>
-        <p>HTML is the basic language used to code most websites. It has a low barrier to entry and doesn't require prior coding knowledge.</p>
+        <p>HTML (HyperText Markup Language) is the backbone of the web. It structures content such as text, images, links, and multimedia on web pages. HTML tells browsers how to display content, but not how it should look — that's where CSS and JavaScript come in.</p>
+        <p>First introduced by Tim Berners-Lee in 1991, HTML has gone through multiple revisions. The latest version, HTML5, introduced semantic tags and native support for media and form validation.</p>
+        <p>HTML is not case-sensitive, but conventionally tags are written in lowercase for consistency.</p>
       </section>
-      <section class="main-section" id="something2">
-        <header>Something2</header>
-        <p>This section covers additional details:</p>
-        <ul>
-          <li>HTML syntax is easy to learn.</li>
-          <li>HTML can be combined with CSS and JavaScript.</li>
-        </ul>
-        <p>Here’s an example:</p>
-        <code>&lt;!DOCTYPE html&gt;</code>
-        <code>&lt;html&gt;&lt;/html&gt;</code>
-        <p>HTML documents are structured hierarchically, starting with the root element.</p>
+
+      <section class="main-section" id="syntax">
+        <header>Syntax</header>
+        <p>HTML uses elements made of tags enclosed in angle brackets. Most elements follow an opening/closing tag pattern:</p>
+        <pre><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
+        <p>Elements can be nested, and indentation helps readability. Some elements are self-closing:</p>
+        <pre><code>&lt;br&gt; &lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+        <p>Attributes provide additional information:</p>
+        <pre><code>&lt;a href="https://example.com" target="_blank"&gt;Visit Site&lt;/a&gt;</code></pre>
+        <p>Always quote attribute values and use meaningful alt text for images to improve accessibility.</p>
       </section>
-      <section class="main-section" id="something3">
-        <header>Something3</header>
-        <p>Advanced topics in HTML include:</p>
+
+      <section class="main-section" id="advanced-elements">
+        <header>Advanced Elements</header>
+        <p>HTML5 introduced semantic elements for better structure:</p>
         <ul>
-          <li>Semantic elements like &lt;header&gt; and &lt;footer&gt;.</li>
-          <li>Embedding multimedia elements like &lt;video&gt; and &lt;audio&gt;.</li>
+          <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>: Introduce top/bottom content areas</li>
+          <li><code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>: Define main content and its parts</li>
+          <li><code>&lt;aside&gt;</code>: Side content or supplementary info</li>
+          <li><code>&lt;nav&gt;</code>: Groups site navigation links</li>
         </ul>
-        <code>&lt;header&gt;&lt;/header&gt;</code>
-        <code>&lt;footer&gt;&lt;/footer&gt;</code>
-        <p>These elements improve readability and accessibility.</p> 
+        <p>These tags enhance accessibility and SEO. They also help developers and tools (like screen readers) understand the layout.</p>
+        <pre><code>&lt;main&gt;
+  &lt;article&gt;
+    &lt;header&gt;&lt;h1&gt;Title&lt;/h1&gt;&lt;/header&gt;
+    &lt;p&gt;Body content here...&lt;/p&gt;
+    &lt;footer&gt;Author name&lt;/footer&gt;
+  &lt;/article&gt;
+&lt;/main&gt;</code></pre>
       </section>
-      <section class="main-section" id="something4">
-        <header>Something4</header>
-        <p>Understanding forms in HTML:</p>
+
+      <section class="main-section" id="forms">
+        <header>Forms</header>
+        <p>Forms collect user input and are essential for interactive websites. Basic form elements include:</p>
         <ul>
-          <li>Forms allow user input via fields like text boxes and buttons.</li>
-          <li>Forms require proper validation for better user experience.</li>
+          <li><code>&lt;input type="text"&gt;</code>, <code>&lt;input type="email"&gt;</code>, <code>&lt;input type="password"&gt;</code></li>
+          <li><code>&lt;textarea&gt;</code>: For longer messages</li>
+          <li><code>&lt;select&gt;</code> and <code>&lt;option&gt;</code>: Dropdown menus</li>
+          <li><code>&lt;button&gt;</code>: For form submission or actions</li>
         </ul>
-        <p>Example:</p>
-        <code>&lt;form action="#" method="post"&gt;</code>
+        <p>Example form with basic validation:</p>
+        <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input id="name" name="name" required&gt;&lt;br&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input id="email" name="email" type="email" required&gt;&lt;br&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        <p>Use <code>label</code> elements to link inputs for accessibility and screen readers.</p>
       </section>
-      <section class="main-section" id="something5">
-        <header>Something5</header>
-        <p>HTML supports inline and block-level elements.</p>
-        <p>Examples include:</p>
+
+      <section class="main-section" id="inline-vs-block">
+        <header>Inline vs Block Elements</header>
+        <p>HTML elements are either block-level or inline:</p>
         <ul>
-          <li>Inline: &lt;span&gt;, &lt;a&gt;.</li>
-          <li>Block-level: &lt;div&gt;, &lt;p&gt;.</li>
+          <li><strong>Block-level:</strong> Start on a new line, take up full width. Ex: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code></li>
+          <li><strong>Inline:</strong> Stay in flow with surrounding content. Ex: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code></li>
         </ul>
-        <code>&lt;div&gt;&lt;/div&gt;</code>
-        <p>These elements define the basic structure of web pages.</p> 
+        <pre><code>&lt;p&gt;This is &lt;span&gt;inline&lt;/span&gt; content inside a paragraph.&lt;/p&gt;</code></pre>
+        <p>Understanding this is key for styling layouts with CSS.</p>
+      </section>
+
+      <section class="main-section" id="media">
+        <header>Media & Embeds</header>
+        <p>HTML allows embedding various media types directly into web pages:</p>
+        <ul>
+          <li><code>&lt;img&gt;</code>: Embeds an image. Use <code>alt</code> for accessibility.</li>
+          <li><code>&lt;video&gt;</code>: Embeds a video with controls.</li>
+          <li><code>&lt;audio&gt;</code>: Embeds sound clips or music.</li>
+          <li><code>&lt;iframe&gt;</code>: Embeds another webpage or a YouTube video.</li>
+        </ul>
+        <pre><code>&lt;video controls width="300"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+        <p>For YouTube embeds, use:</p>
+        <pre><code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+      </section>
+
+      <section class="main-section" id="best-practices">
+        <header>Best Practices & SEO</header>
+        <p>Writing clean, accessible, and semantic HTML improves usability and visibility in search engines.</p>
+        <ul>
+          <li>Use semantic tags wherever possible (e.g. <code>&lt;article&gt;</code>, <code>&lt;main&gt;</code>)</li>
+          <li>Always use <code>alt</code> attributes on images</li>
+          <li>Structure content using headings in order: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></li>
+          <li>Use <code>aria-*</code> attributes for accessibility enhancements when needed</li>
+          <li>Minimize inline styles and prefer external CSS for maintainability</li>
+        </ul>
+        <p>Proper HTML structure makes your website more performant, accessible, and easier to maintain.</p>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
