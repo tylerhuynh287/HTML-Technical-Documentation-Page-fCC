@@ -60,7 +60,7 @@ project-root/
 ├── styles.css        # All styling (responsive + theming)
 ├── script.js         # JavaScript interactivity
 └── README.md         # Project documentation
-
+```
 
 ---
 
